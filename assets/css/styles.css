@@ -1,0 +1,277 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+*{
+    font-family: Poppins;
+}
+
+/* .content {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    #container-left { grid-area: 1 / 1 / 2 / 2; }
+    #container-card { grid-area: 1 / 2 / 2 / 3; } */
+
+#container-card {
+
+    background: rgb(70,134,198);
+    background: linear-gradient(to bottom, rgb(43, 102, 161) 14%, rgb(141, 161, 218) 100%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.container-form {
+    background: #fff;
+    border-radius: 18px 18px 18px 18px; ;
+    box-shadow: 0px 2px 23px #00000030;   
+}
+
+.container-form h1 {
+    background-image: linear-gradient(to right, rgb(22, 13, 32), rgb(49, 92, 128), rgb(64, 192, 224));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
+.container-form h1 {
+    font-size: 2.7rem;
+    line-height: 1.1;
+}
+
+.container-form h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms{
+    margin: 16px 0 16px 0;
+    padding: 0px 25px;
+}
+
+/* ------------------------------------ Inputs -------- */
+.input-field {
+    position: relative;
+    height: 30px;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.6rem;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 35px; 
+    border: 0px;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.input-field .underline::before {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #4776e6, #063986);
+    transform: scaleX(0);
+    transition: all .3 ease-in-out;
+    transform-origin: left;
+    
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+/* ------------------------------------ Submit button---- */
+
+form input[type="submit"] {
+    font-family: poppins-bold;
+    font-size: 18px;
+    width: 450px;
+    height: 42px;
+    border: 1px solid rgb(161, 157, 157);
+    border-radius: 6px;
+    padding: 0;
+    margin-top: 30px;
+    background: linear-gradient(to left, #4776e6, #063986);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right,  #4776e6, #063986);
+}
+
+
+/* ------------------------------------ Forget password ---- */
+
+.link-action{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-action a {
+    text-decoration: none;
+}
+
+.link-action a:link {
+    color: red;
+ }
+ 
+ .link-action a:visited {
+     color: rgb(70, 99, 70);
+ }
+ 
+ .link-action a:hover {
+     color: #000000;
+ }
+ 
+ .link-action a:active {
+     color: rgb(27, 27, 139);
+ }
+
+ /* ---------------------------------- Separation line ------ */
+#row{
+    border-bottom: 1px solid #dadde1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ------------------------------------ Register button ----- */
+#register{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+#register button {
+    font-family: poppins-bold;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(161, 157, 157);
+    border-radius: 6px;
+    padding: 0;
+    margin: 15px 0 20px 0;
+    background: linear-gradient(to left, #4776e6, #063986);
+    color: #fff;
+    transition: all 0.3s ease
+}
+
+#register button:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right,  #4776e6, #063986);
+}
+
+#register button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* .switch {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    margin-left: 250px;
+    margin-top: 50px;
+    float: right;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+   Rounded sliders 
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } */

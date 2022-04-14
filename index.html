@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+    <link rel="icon" type="image/png" href="assets/img/icon-logo.png" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/_reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
 </head>
+
 <body>
-    
+
+    <div class="content">
+        <!-- <div id="container-left">
+            <img src="./assets/img/img-left.png" alt="" style="width: 100%; height: ;">
+        </div> -->
+        <!-- <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label> -->
+
+        <div id="container-card">
+            <div class="container-form">
+                
+                <h1>LOGIN</h1>
+
+                <form action="/" method="post" id="forms">
+
+                    <div class="input-field">
+
+                        <div class="error"></div>
+                        <input type="text" id="username" name="username" value="" placeholder="Enter your username" required>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="input-field">
+                        <div class="error"></div>
+                        <input type="password" id="password" name="lnome" value="" placeholder="Enter your password" required>
+                        <div class="underline"></div>
+                    </div>
+
+                    <input class="btn-submit" type="submit" value="Entrar">
+                </form>
+
+                <span class="link-action"><a href="#">Esqueceu a senha?</a></span>
+
+                <div id="row"></div>
+
+                <div id="register">
+                    <button><a href="register.html">Cadastre-se</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
